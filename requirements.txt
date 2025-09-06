@@ -1,0 +1,32 @@
+# Backend framework & server
+fastapi
+uvicorn[standard]
+
+# File upload helper (FastAPI)
+python-multipart
+aiofiles
+
+# DB / ORM (optional but useful)
+sqlalchemy
+
+# OCR / image processing
+pytesseract
+opencv-python
+Pillow
+exifread
+
+# Speech-to-text (local whisper)
+openai-whisper
+torch
+ffmpeg-python
+
+# Text analysis
+textblob
+vaderSentiment
+
+# Encryption / security
+cryptography
+python-dotenv
+
+# Optional: Encrypted SQLite (may require OS deps)
+# pysqlcipher3  # Commented out due to build issues on Windows

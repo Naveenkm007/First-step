@@ -1,0 +1,170 @@
+/* Memory card styles */
+.memory-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease;
+  border: 1px solid #e9ecef;
+}
+
+.memory-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Card header */
+.card-header {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.thumbnail {
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #f8f9fa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.thumbnail-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.thumbnail-icon {
+  font-size: 1.5rem;
+  color: #6c757d;
+}
+
+.card-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.card-title {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+  line-height: 1.3;
+  word-wrap: break-word;
+}
+
+.card-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.date,
+.location {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+/* Card content */
+.card-content {
+  margin-bottom: 1rem;
+}
+
+.extracted-text {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #555;
+  background: #f8f9fa;
+  padding: 0.75rem;
+  border-radius: 6px;
+  border-left: 3px solid #667eea;
+}
+
+/* Card footer */
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 0.75rem;
+  border-top: 1px solid #e9ecef;
+}
+
+.sentiment {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.sentiment-emoji {
+  font-size: 1.2rem;
+}
+
+.sentiment-text {
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.view-button {
+  padding: 0.5rem 1rem;
+  background: #667eea;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.view-button:hover {
+  background: #5a6fd8;
+  transform: translateY(-1px);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .memory-card {
+    padding: 0.75rem;
+  }
+  
+  .card-header {
+    gap: 0.75rem;
+  }
+  
+  .thumbnail {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .card-title {
+    font-size: 1rem;
+  }
+  
+  .card-meta {
+    font-size: 0.8rem;
+  }
+  
+  .extracted-text {
+    font-size: 0.85rem;
+    padding: 0.5rem;
+  }
+  
+  .card-footer {
+    flex-direction: column;
+    gap: 0.75rem;
+    align-items: stretch;
+  }
+  
+  .view-button {
+    align-self: center;
+    padding: 0.75rem 1.5rem;
+  }
+}

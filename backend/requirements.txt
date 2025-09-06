@@ -1,0 +1,36 @@
+# MemoriaVault Backend Requirements
+# FastAPI and web server
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+python-multipart==0.0.6
+
+# Database
+sqlalchemy==2.0.23
+
+# Image processing and OCR
+opencv-python==4.8.1.78
+pytesseract==0.3.10
+Pillow==10.1.0
+exifread==3.0.0
+
+# Audio processing and ASR
+openai-whisper==20231117
+torch==2.1.1
+ffmpeg-python==0.2.0
+
+# Text analysis and sentiment
+textblob==0.17.1
+vaderSentiment==3.3.2
+nltk==3.8.1
+
+# Security and environment
+cryptography==41.0.7
+python-dotenv==1.0.0
+
+# Development and testing
+pytest==7.4.3
+httpx==0.25.2
+pytest-asyncio==0.21.1
+
+# Optional: Encrypted SQLite (requires system dependencies)
+# pysqlcipher3==1.1.0  # Commented out due to build issues on Windows
